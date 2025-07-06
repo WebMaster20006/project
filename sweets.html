@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Sweets - Pavi Bakery</title>
+  <style>
+    :root {
+      --main-color: #ff6f61;
+      --bg-gradient: linear-gradient(to right, #fffaf0, #ffe4e1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-gradient);
+      color: #333;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    nav h1 {
+      color: var(--main-color);
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--main-color);
+    }
+
+    .sweets-section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    .sweets-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--main-color);
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      text-align: center;
+      padding: 15px;
+      color: #d35400;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff0f5;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>🍰 Pavi Bakery</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="sweets.html">Sweets</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="sweets-section">
+  <h2>Our Delicious Sweets</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="gulab2.jpg" alt="Gulab Jamun">
+      <h3>Gulab Jamun</h3>
+    </div>
+    <div class="card">
+      <img src="laddu.jpg" alt="Laddu">
+      <h3>Boondi Laddu</h3>
+    </div>
+    <div class="card">
+      <img src="jalebis3.jpg" alt="Jalebi">
+       <h3>Jalebi</h3>
+    </div>
+     <div class="card">
+      <img src="milk_sweets2.jpg" alt="Kaju Katli">
+       <h3>Kaju Katli</h3>
+    </div>
+     <div class="card">
+      <img src="halva.webp" alt="Halva ">
+       <h3>Halva </h3>
+    </div>
+    <div class="card">
+      <img src="rasgulla.png" alt="Rasgulla">
+       <h3>Rasgulla</h3>
+    </div><br/>
+  <h2>Cakes</h2>
+  <div class="grid"></div>
+   <div class="card">
+      <img src="cake.jpg".jpg" alt="Blue Berry">
+       <h3>Blue Berry</h3>
+    </div>
+    <div class="card">
+      <img src="birthday_cake.jpg".jpg" alt="Birhtday Cakes">
+       <h3>Birhtday Cakes</h3>
+    </div>
+    <div class="card">
+      <img src="chocolate.jpg".jpg" alt="Chocolate Cakes">
+       <h3>Chocolate Cakes</h3>
+    </div>
+    </div>
+    </section>
+    </body>
+    </html>
+    
+    
+    
+

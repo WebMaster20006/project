@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Pavi Bakery</title>
+  <style>
+    :root {
+      --main-color: #ff6f61;
+      --bg-gradient: linear-gradient(to right, #fffaf0, #ffe4e1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-gradient);
+      color: #333;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      padding: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    nav h1 {
+      color: var(--main-color);
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--main-color);
+    }
+
+    .about-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .about-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--main-color);
+      margin-bottom: 20px;
+    }
+
+    .about-text {
+      font-size: 1.2rem;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .highlight {
+      color: #d35400;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff0f5;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+
+      .about-section {
+        margin: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>🍰 Pavi Bakery</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="sweets.html">Sweets</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<section class="about-section">
+  <h2>About Pavi Bakery</h2>
+  <div class="about-text">
+    <p>
+      Welcome to <span class="highlight">Pavi Bakery</span> – your sweet home in <span class="highlight">Sankarankovil</span>!  
+      We specialize in crafting delicious, fresh, and traditional Indian sweets that bring joy to every occasion. From crispy jalebis to soft gulab jamuns, every item is made with love, care, and high-quality ingredients.
+    </p>
+    <br/>
+    <p>
+      Founded with a passion for sweets and service, Pavi Bakery has grown into a local favorite for festivals, weddings, birthdays, and everyday indulgence. We take pride in our <span class="highlight">hygienic kitchen</span>, <span class="highlight">authentic taste</span>, and warm customer service.
+    </p>
+    <br/>
+    <p>
+      Whether you're craving a box of laddus or need a custom sweet combo for a function – <span class="highlight">Pavi Bakery is here to make your moments sweeter!</span>
+    </p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Pavi Bakery | Sankarankovil | Phone: 9876543210 | Email: <a href="mailto:pavi@gmail.com">pavi@gmail.com</a>
+</footer>
+
+</body>
+</html>

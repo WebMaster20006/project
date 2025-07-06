@@ -1,0 +1,186 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pavi Bakery - Home</title>
+  <style>
+    :root {
+      --main-color: #ff6f61;
+      --bg-gradient: linear-gradient(to right, #fff0f5, #ffe4e1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-gradient);
+      color: #333;
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      padding: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    nav h1 {
+      color: var(--main-color);
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--main-color);
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1 1 400px;
+      padding: 20px;
+    }
+
+    .hero-text h2 {
+      font-size: 3rem;
+      color: var(--main-color);
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .hero-img {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+
+    .hero-img img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    .cta {
+      text-align: center;
+      margin: 40px auto;
+    }
+
+    .cta a {
+      background: var(--main-color);
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: background 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #ff4c4c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff0f5;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>🍰 Pavi Bakery</h1>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="sweets.html">Sweets</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Delight in Every Bite!</h2>
+    <p>Welcome to Pavi Bakery in Sankarankovil – where tradition meets taste. Explore our wide range of homemade sweets made with love.</p>
+  </div>
+  <div class="hero-img">
+    <img src="front_image.png" alt="Bakery Image">
+  </div>
+</section>
+
+<div class="cta">
+  <a href="sweets.html">View Our Sweets</a>
+</div>
+
+<footer>
+  &copy; 2025 Pavi Bakery | Sankarankovil | Contact: 9865747219 | Email: <a href="mailto:pavi@gmail.com">pavi@gmail.com</a>
+</footer>
+
+</body>
+</html>
